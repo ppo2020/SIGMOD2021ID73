@@ -11,10 +11,16 @@ will be uploaded by Feb 23, 2020.
 **youtube**:
 
 ```
+cd data
+
 mkdir face face/real_data fasttext_cos fasttext_cos/real_data fasttext_eu fasttext_eu/real_data youtube youtube/real_data
 ```
 
-Download the above datasets and put them into the directory "real_data", e.g., face_originalData.npy -> ./face/real_data/
+Download the above datasets and put them into the directory "real_data":
+* face_originalData.npy         ->  ./data/face/real_data/face_originalData.npy
+* fasttext_originalData.npy     ->  ./data/fasttext_cos/real_data/fasttext_cos_originalData.npy
+* fasttext_originalData.npy     ->  ./data/fasttext_eu/real_data/fasttext_eu_originalData.npy
+* youtube_originalData.npy      ->  ./data/youtube/real_data/youtube_originalData.npy
 
 # Structure
 ```
