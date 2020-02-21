@@ -8,7 +8,7 @@ will be uploaded by Feb 23, 2020.
 
 **fasttext**:https://drive.google.com/open?id=1FuWBcNxT_wO5cSCTJXJ6a6JjfD_vhfSb
 
-**youtube**:
+**youtube**:https://drive.google.com/open?id=1vn30JLdqlRf5qW62XussqpnnnwamXIwH
 
 ```
 mkdir data
