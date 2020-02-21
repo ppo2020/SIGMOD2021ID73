@@ -98,7 +98,7 @@ For other datasets, just replace "face" with "fasttext_cos", "fasttext_eu" or "y
 ```
 cd ./run/one/
 
-python train_face_d128_2M_smallSel_huber_log.py
+./train_face_d128_2M_smallSel_huber_log.sh
 
 python predict_face_d128_2M_smallSel_huber_log.py
 
