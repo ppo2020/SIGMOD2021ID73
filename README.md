@@ -11,6 +11,8 @@ will be uploaded by Feb 23, 2020.
 **youtube**:
 
 ```
+mkdir data
+
 cd data
 
 mkdir face face/real_data fasttext_cos fasttext_cos/real_data fasttext_eu fasttext_eu/real_data youtube youtube/real_data
