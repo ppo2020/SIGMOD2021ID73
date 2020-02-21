@@ -122,3 +122,5 @@ cd ./run/RandomPartition
 
 python predict_one_face_d128_2M_smallSel_huber_log.py
 ```
+
+We can run other datasets as the same with face.
