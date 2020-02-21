@@ -83,7 +83,7 @@ There are two options: cover tree partition or random partition.
 ### 2.2 Random partition (RP)
 
 ```
-./train_cp.sh face
+./train_rp.sh face
 ```
 
 All data are stored in the directory ./data/face/train/
