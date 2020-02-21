@@ -41,7 +41,7 @@ Download the above datasets and put them into the directory "real_data", e.g., f
 ```
 
 * data: the dataset and all training information
-* model: model file, e.g., SelNet
+* model: SelNet model
 * proc: scripts for generating training data, cover tree and random partition strategies.
 * run: scripts to train and inference
   - one: run SelNet without partition strategies
@@ -62,7 +62,7 @@ cd ./proc/shell
 ```
 The script train.sh generates training, validation and testing data for SelNet without partition.
 
-This might take a long time to finish.
+This might take a long time to compute labels for training, validation and testing queries.
 
 ## 2. Partition strategies
 
@@ -81,6 +81,8 @@ There are two options: cover tree partition or random partition.
 ```
 
 All data are stored in the directory ./data/face/train/
+
+This also need a long time to generate training data of CT or RP.
 
 For other datasets, just replace "face" with "fasttext_cos", "fasttext_eu" or "youtube"
 
