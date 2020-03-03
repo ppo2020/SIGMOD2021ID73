@@ -1,7 +1,6 @@
 # SelNet-KDD2020
 souce code of KDD20 submission
 
-will be uploaded by Feb 23, 2020.
 
 # Datasets
 **face**: https://drive.google.com/open?id=16aNBnAGg6BrrTVxOXsjGnvlr89vJYX5q
