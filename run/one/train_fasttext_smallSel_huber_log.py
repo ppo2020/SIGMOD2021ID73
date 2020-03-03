@@ -9,13 +9,14 @@ from selnet import *
 loss_option = 'huber_log'
 partition_option = 'l2'
 
-test_file = '../../data/fasttext_eu/train/fasttext_testingDataL_smallSel-mixlabels.npy'
-valid_file = '../../data/fasttext_eu/train/fasttext_validationDataL_smallSel-mixlabels.npy'
+dataFile = '../../data/fasttext_eu/train/fasttext_eu_trainingData.npy'
+test_file = '../../data/fasttext_eu/train/fasttext_eu_testingData.npy'
+valid_file = '../../data/fasttext_eu/train/fasttext_eu_valdiationData.npy'
+
 
 x_dim = 300
 x_reducedim = 80
 
-dataFile = '../../data/fasttext_eu/train/fasttext_trainingDataL_smallSel-mixlabels.npy'
 train_data = np.load(dataFile)
  
 test_data = np.load(test_file)

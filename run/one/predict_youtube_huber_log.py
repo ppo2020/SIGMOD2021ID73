@@ -16,9 +16,10 @@ def eval_(predictions, labels):
 loss_option = 'huber_log'
 partition_option = 'l2'
 
-test_file = '../../data/face/train/face_testingData.npy'
+test_file = '../../data/youtube/train/youtube_testingData.npy'
 
-x_dim = 128
+
+x_dim = 1770
 x_reducedim = 80
 
 test_data = np.load(test_file)
@@ -43,7 +44,7 @@ unit_len = 100
 max_tau = 1 #54.0
 
 hidden_units = [512, 512, 512, 256]
-vae_hidden_units = [512, 256, 128]
+vae_hidden_units = [512, 256, 256]
 
 batch_size = 512
 epochs = 1500
@@ -54,10 +55,10 @@ tau_embedding_size = 5
 original_x_dim = test_original_X.shape[1]
 dimreduce_x_dim = x_reducedim
 
-test_data_predictions_labels_file = os.path.join('./test_face_d128_2M_smallSel_huber_log/', 'test_predictions.npy')
-valid_data_predictions_labels_file = os.path.join('./test_face_d128_2M_smallSel_huber_log/', 'valid_predictions_labels_one_epoch_')
-regression_name = 'face_d128_2M_smallSel_huber_log_regressor_one_'
-regression_model_dir = './model_dir_face_d128_2M_smallSel_huber_log/regressor_one-1499'
+test_data_predictions_labels_file = os.path.join('./test_youtube_smallSel_huber_log/', 'test_predictions.npy')
+valid_data_predictions_labels_file = os.path.join('./test_youtube_smallSel_huber_log/', 'valid_predictions_labels_one_epoch_')
+regression_name = 'youtube_smallSel_huber_log_regressor_one_'
+regression_model_dir = './model_dir_youtube_smallSel_huber_log/regressor_one-1499'
 
 
 # train

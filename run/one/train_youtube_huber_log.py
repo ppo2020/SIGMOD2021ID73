@@ -9,13 +9,14 @@ from selnet import *
 loss_option = 'huber_log'
 partition_option = 'l2'
 
-test_file = '../../data/youtube/train/youtube_norm_testingDataL_smallSel-mixlabels.npy'
-valid_file = '../../data/youtube/train/youtube_norm_validationDataL_smallSel-mixlabels.npy'
+dataFile = '../../data/youtube/train/youtube_trainingData.npy'
+test_file = '../../data/youtube/train/youtube_testingData.npy'
+valid_file = '../../data/youtube/train/youtube_valdiationData.npy'
+
 
 x_dim = 1770
 x_reducedim = 80
 
-dataFile = '../../data/youtube/train/youtube_norm_trainingDataL_smallSel-mixlabels.npy'
 train_data = np.load(dataFile)
  
 test_data = np.load(test_file)
@@ -91,12 +92,4 @@ regressor = SelNet(hidden_units, vae_hidden_units, batch_size, epochs, epochs_va
                          regression_model_dir, unit_len, max_tau, tau_part_num, partition_option, loss_option)
 
 regressor.train_vae_dnn(train_original_X, train_tau, train_Y, valid_original_X, valid_tau, valid_Y)
-
-predictions = regressor.predict_vae_dnn(test_original_X, test_tau, test_Y)
-
-predictions = np.array(predictions)
-
-# save test file
-np.save(test_data_predictions_labels_file, predictions)
-
 

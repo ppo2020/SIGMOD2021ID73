@@ -9,13 +9,13 @@ from selnet import *
 loss_option = 'huber_log'
 partition_option = 'l2'
 
-test_file = '../../data/fasttext_cos/train/fasttext_testingDataL_smallSel_Cosine-mixlabels.npy'
-valid_file = '../../data/fasttext_cos/train/fasttext_validationDataL_smallSel_Cosine-mixlabels.npy'
+dataFile = '../../data/fasttext_cos/train/fasttext_cos_trainingData.npy'
+test_file = '../../data/fasttext_cos/train/fasttext_cos_testingData.npy'
+valid_file = '../../data/fasttext_cos/train/fasttext_cos_valdiationData.npy'
 
 x_dim = 300
 x_reducedim = 80
 
-dataFile = '../../data/fasttext_cos/train/fasttext_trainingDataL_smallSel_Cosine-mixlabels.npy'
 train_data = np.load(dataFile)
  
 test_data = np.load(test_file)
@@ -92,12 +92,5 @@ regressor = SelNet(hidden_units, vae_hidden_units, batch_size, epochs, epochs_va
 
 
 regressor.train_vae_dnn(train_original_X, train_tau, train_Y, valid_original_X, valid_tau, valid_Y)
-
-predictions = regressor.predict_vae_dnn(test_original_X, test_tau, test_Y)
-
-predictions = np.array(predictions)
-
-# save test file
-np.save(test_data_predictions_labels_file, predictions)
 
 
