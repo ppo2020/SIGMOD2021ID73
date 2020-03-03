@@ -46,7 +46,7 @@ hidden_units = [512, 512, 512, 256]
 vae_hidden_units = [512, 256, 128]
 
 batch_size = 512
-epochs = 200 #1500
+epochs = 1500
 epochs_vae = 100
 learning_rate = 0.00003
 log_option = False
@@ -57,7 +57,7 @@ dimreduce_x_dim = x_reducedim
 test_data_predictions_labels_file = os.path.join('./test_face_d128_2M_smallSel_huber_log/', 'test_predictions.npy')
 valid_data_predictions_labels_file = os.path.join('./test_face_d128_2M_smallSel_huber_log/', 'valid_predictions_labels_one_epoch_')
 regression_name = 'face_d128_2M_smallSel_huber_log_regressor_one_'
-regression_model_dir = './model_dir_face_d128_2M_smallSel_huber_log/regressor_one-199'
+regression_model_dir = './model_dir_face_d128_2M_smallSel_huber_log/regressor_one-1499'
 
 
 # train
