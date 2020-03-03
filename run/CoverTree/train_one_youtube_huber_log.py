@@ -140,10 +140,10 @@ tau_embedding_size = 5
 original_x_dim = train_original_X.shape[1]
 dimreduce_x_dim = x_reducedim
 
-test_data_predictions_labels_file = os.path.join('./test_youtube_d128_2M_huber_log_new_smallSel_greedy_clusters', 'test_predictions.npy')
-valid_data_predictions_labels_file = os.path.join('./valid_youtube_d128_2M_huber_log_new_smallSel_greedy_clusters', 'valid_predictions_labels')
-regression_name = 'youtube_d128_2M_huber_log_new_smallSel_greedy_clusters_'
-regression_model_dir = './model_dir_youtube_d128_2M_huber_log_new_smallSel_greedy_clusters/regression_CTNet'
+test_data_predictions_labels_file = os.path.join('./test_youtube_huber_log_greedy_clusters', 'test_predictions.npy')
+valid_data_predictions_labels_file = os.path.join('./valid_youtube_huber_log_greedy_clusters', 'valid_predictions_labels')
+regression_name = 'youtube_huber_log_greedy_clusters_'
+regression_model_dir = './model_dir_youtube_huber_log_greedy_clusters/regression_CTNet'
 
 regressor = SelNetPart(hidden_units, vae_hidden_units, batch_size, epochs, epochs_vae,
                             learning_rate, log_option, tau_embedding_size, original_x_dim, dimreduce_x_dim,
