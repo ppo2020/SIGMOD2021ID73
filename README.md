@@ -1,5 +1,5 @@
-# SelNet-KDD2020
-souce code of KDD20 submission
+# SelNet-SIGMOD2021 ID73
+souce code of SIGMOD2021 submission
 
 
 # Datasets
