@@ -1,6 +1,7 @@
 # SelNet-SIGMOD2021 ID73
 souce code of SIGMOD2021 submission
 
+SelNet_SIGMOD2021.pdf  --> the full version of SIGMOD submission.
 
 # Datasets
 **face**: https://drive.google.com/open?id=16aNBnAGg6BrrTVxOXsjGnvlr89vJYX5q
