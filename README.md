@@ -1,4 +1,4 @@
-# SelNet-SIGMOD2021 ID73
+# Extended Version of Submission
 souce code of SIGMOD2021 submission
 
 SelNet_SIGMOD2021.pdf  --> the full version of SIGMOD submission.
